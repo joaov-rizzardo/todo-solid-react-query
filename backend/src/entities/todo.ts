@@ -5,4 +5,13 @@ export class Todo {
     private description: string,
     private completed: boolean
   ) {}
+
+  toObject() {
+    return {
+      id: this.id,
+      name: this.name,
+      description: this.description,
+      completed: this.completed,
+    };
+  }
 }
