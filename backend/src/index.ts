@@ -9,7 +9,8 @@ app.use(cors());
 
 app.use("/", router);
 
-app.listen(8000, async () => {
+const port = 8000;
+app.listen(port, async () => {
   await connect();
-  console.log("Api is running on port 3000");
+  console.log(`Api is running on port ${port}`);
 });
